@@ -1,0 +1,35 @@
+display: block;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  color: black;
+		}
+	</style>
+</head>
+<body>
+	<!-- Menu button -->
+	<div class="menu-btn" onclick="toggleDropdown()">
+		<div class="menu-icon"></div>
+		<div class="menu-icon"></div>
+		<div class="menu-icon"></div>
+	</div>
+
+	<!-- Dropdown menu -->
+	<div class="dropdown" id="dropdown">
+		<a href="#">Chicken</a>
+		<a href="#">Beef</a>
+		<a href="#">Sushi</a>
+	</div>
+
+	<!-- Script to show/hide the dropdown menu -->
+	<script>
+		function toggleDropdown() {
+			var dropdown = document.getElementById("dropdown");
+			if (dropdown.classList.contains("show")) {
+				dropdown.classList.remove("show");
+			} else {
+				dropdown.classList.add("show");
+			}
+		}
+	</script>
+</body>
+</html>
